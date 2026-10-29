@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Findally</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" type="text/css" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" type="text/css" href="AccessoriesReview.css">
+</head>
+<body>
+    <header class="NavBar">
+        <a href="Index.html" class="NavLogo"><span>Find</span>ally</a>
+
+        <nav class="NavMenu">
+            <a href="Index.html" class="NavLink">หน้าแรก</a>
+
+            <div class="NavDropdown">
+                <a href="#" class="NavLink">
+                    สำรวจ
+                    <img src="images/icons/ArrowDown.png" alt="เปิดเมนู">
+                </a>
+
+                <div class="DropdownMenu ExploreMenu">
+                    <div class="DropdownGroup">
+                        <a href="Category.html" class="DropdownItem DropdownCategory">
+                            <span>หมวดหมู่</span>
+                            <span class="DropdownArrow">›</span>
+                        </a>
+
+                        <div class="CategorySubmenu">
+                            <a href="PC.html" class="DropdownItem">คอมพิวเตอร์และโน้ตบุ๊ก</a>
+                            <a href="Mobile.html" class="DropdownItem">อุปกรณ์พกพา</a>
+                            <a href="Gaming.html" class="DropdownItem">เกมและอุปกรณ์เกม</a>
+                            <a href="Audio.html" class="DropdownItem">เครื่องเสียง</a>
+                            <a href="PCAccessories.html" class="DropdownItem">อุปกรณ์เสริมคอมพิวเตอร์</a>
+                        </div>
+                    </div>
+
+                    <a href="Reviews.html" class="DropdownItem">รีวิวทั้งหมด</a>
+                    <a href="Favorites.html" class="DropdownItem">รายการโปรด</a>
+                    <a href="Compare.html" class="DropdownItem">เปรียบเทียบสินค้า</a>
+                    <a href="History.html" class="DropdownItem">ประวัติการเข้าชม</a>
+                    <a href="Setup.html" class="DropdownItem">My Setup</a>
+                    <a href="Request.html" class="DropdownItem">ส่งคำขอ</a>
+                </div>
+            </div>
+
+            <div class="NavDropdown">
+                <a href="Category.html" class="NavLink Active">หมวดหมู่<img src="images/icons/ArrowDown.png" alt="Arrow Down"></a>
+
+                <div class="DropdownMenu CategoryMenu">
+                    <a href="PC.html" class="DropdownLink">คอมพิวเตอร์และโน้ตบุ๊ก</a>
+                    <a href="Mobile.html" class="DropdownLink">อุปกรณ์พกพา</a>
+                    <a href="Gaming.html" class="DropdownLink">เกมและอุปกรณ์เกม</a>
+                    <a href="Audio.html" class="DropdownLink">เครื่องเสียง</a>
+                    <a href="Accessories.html" class="DropdownLink">อุปกรณ์เสริมคอมพิวเตอร์</a>
+                </div>
+            </div>
+
+            <a href="About.html" class="NavLink">เกี่ยวกับเรา</a>
+        </nav>
+
+        <div class="NavActions">
+            <button class="NavIcon SearchButton" aria-label="ค้นหา">
+                <img src="images/icons/SearchIcon.png" alt="ค้นหา">
+            </button>
+
+            <a href="Settings.html" class="NavIcon" aria-label="ตั้งค่า"><img src="images/icons/SettingIcon.png" alt="ตั้งค่า"></a>
+
+            <button class="NavMenuButton" aria-label="เปิดเมนู">☰</button>
+        </div>
+    </header>
+    
+    <main class="AccessoriesReviewPage">
+        <h1 class="AccessoriesReviewTitle">รายละเอียดสินค้า</h1>
+
+        <section class="AccessoriesReviewProduct" aria-labelledby="ProductName">
+            <a class="AccessoriesReviewImage" href="images/MXMaster4.webp">
+                <img src="images/MXMaster4.webp" alt="Logitech MX Master 4 เมาส์ไร้สายสีขาวและสีดำ">
+            </a>
+
+            <div class="AccessoriesReviewSummary">
+                <h2 id="ProductName">Logitech MX Master 4</h2>
+                <p>
+                    เมาส์ไร้สายสำหรับการทำงานที่เน้นความสบายและความแม่นยำ
+                    รองรับการใช้งานหลายอุปกรณ์ พร้อมปุ่มและฟีเจอร์ที่ช่วยเพิ่มความสะดวกในการทำงาน
+                </p>
+                <div class="AccessoriesReviewActions">
+                    <button type="button" class="AccessoriesReviewButton">บันทึก</button>
+                    <a href="Compare.html" class="AccessoriesReviewButton">เปรียบเทียบ</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="AccessoriesSpecs" aria-labelledby="SpecsTitle">
+            <h2 id="SpecsTitle">สเป็คและรีวิว</h2>
+
+            <section class="AccessoriesSpecGroup">
+                <h3>ข้อมูลทั่วไป</h3>
+                <ul>
+                    <li>ประเภท: Wireless Mouse</li>
+                    <li>แบรนด์: Logitech</li>
+                    <li>รุ่น: MX Master 4</li>
+                    <li>การออกแบบ: Ergonomic / Right-handed</li>
+                    <li>น้ำหนัก: 150 g</li>
+                    <li>ขนาด: 128.2 × 88.4 × 50.8 mm</li>
+                    <li>จำนวนปุ่ม: 8 ปุ่ม</li>
+                    <li>ซอฟต์แวร์: Logi Options+</li>
+                    <li>รองรับ Easy-Switch: สูงสุด 3 อุปกรณ์</li>
+                </ul>
+            </section>
+
+            <section class="AccessoriesSpecGroup">
+                <h3>เซ็นเซอร์</h3>
+                <ul>
+                    <li>Sensor: Darkfield High Precision</li>
+                    <li>DPI: 200–8,000 DPI</li>
+                    <li>DPI Adjustment: ปรับได้ทีละ 50 DPI</li>
+                    <li>Tracking: รองรับพื้นผิวหลากหลาย รวมถึงกระจกที่มีความหนาอย่างน้อย 4 mm</li>
+                </ul>
+            </section>
+
+            <section class="AccessoriesSpecGroup">
+                <h3>การควบคุม</h3>
+                <ul>
+                    <li>Scroll Wheel: MagSpeed</li>
+                    <li>Horizontal Scroll: รองรับ</li>
+                    <li>Thumb Wheel: รองรับ</li>
+                    <li>Actions Ring: รองรับ</li>
+                    <li>Haptic Feedback: รองรับ</li>
+                    <li>Quiet Clicks: ลดเสียงคลิกเมื่อเทียบกับเมาส์ทั่วไป</li>
+                </ul>
+            </section>
+
+            <section class="AccessoriesSpecGroup">
+                <h3>การเชื่อมต่อ</h3>
+                <ul>
+                    <li>Receiver: Logi Bolt USB-C</li>
+                    <li>Bluetooth: Bluetooth Low Energy</li>
+                    <li>Wireless Range: สูงสุด 10 m</li>
+                    <li>Easy-Switch: สูงสุด 3 อุปกรณ์</li>
+                </ul>
+            </section>
+
+            <section class="AccessoriesSpecGroup">
+                <h3>แบตเตอรี่</h3>
+                <ul>
+                    <li>Battery: Li-Po 650 mAh</li>
+                    <li>Battery Life: สูงสุด 70 วัน</li>
+                    <li>Charging: USB-C</li>
+                    <li>Quick Charge: ชาร์จ 1 นาที ใช้งานได้ประมาณ 3 ชั่วโมง</li>
+                </ul>
+            </section>
+
+            <section class="AccessoriesSpecGroup">
+                <h3>ความเข้ากันได้</h3>
+                <ul>
+                    <li>Windows: รองรับ</li>
+                    <li>macOS: รองรับ</li>
+                    <li>Linux: รองรับ</li>
+                    <li>ChromeOS: รองรับ</li>
+                    <li>iPadOS: รองรับ</li>
+                    <li>Android: รองรับ</li>
+                </ul>
+            </section>
+
+            <section class="AccessoriesSpecGroup">
+                <h3>เหมาะกับ</h3>
+                <p>
+                    เหมาะกับคนที่ต้องการเมาส์ไร้สายสำหรับการทำงาน
+                    เน้นความสบาย ความแม่นยำ และการควบคุมที่สะดวก
+                    โดยเฉพาะงานเอกสาร งานออกแบบ และการใช้งานหลายอุปกรณ์
+                </p>
+            </section>
+
+            <section class="AccessoriesSpecGroup">
+                <h3>Findally Score</h3>
+                <p class="AccessoriesReviewScore">9/10</p>
+            </section>
+        </section>
+    </main>
+
+    <footer class="Footer">
+        <div class="FooterMain">
+            <div class="FooterBrand">
+                <a href="Index.html" class="FooterLogo"><span>Find</span>ally</a>
+                <p>Finally found what you’re looking for.</p>
+            </div>
+
+            <nav class="FooterLinks">
+                <a href="Review.html">รีวิว</a>
+                <a href="About.html">เกี่ยวกับเรา</a>
+                <a href="Request.html">ส่งคำขอ</a>
+            </nav>
+
+            <div class="FooterSocials">
+                <a href="#" aria-label="Discord"><img src="images/icons/DiscordIcon.png" alt="Discord"></a>
+                <a href="#" aria-label="Facebook"><img src="images/icons/FacebookIcon.png" alt="Facebook"></a>
+                <a href="#" aria-label="YouTube"><img src="images/icons/YoutubeIcon.png" alt="YouTube"></a>
+            </div>
+        </div>
+
+        <div class="FooterBottom">
+            <p>©2026 ITG11</p>
+            <p>จัดทำเพื่อเหล่าคนรักในการค้นพบสิ่งใหม่ๆ</p>
+        </div>
+    </footer>
+</body>
+</html>

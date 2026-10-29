@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Findally</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" type="text/css" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" type="text/css" href="About.css">
+</head>
+<body>
+    <header class="NavBar">
+        <a href="Index.html" class="NavLogo"><span>Find</span>ally</a>
+
+        <nav class="NavMenu">
+            <a href="Index.html" class="NavLink">หน้าแรก</a>
+
+            <div class="NavDropdown">
+                <a href="#" class="NavLink">
+                    สำรวจ
+                    <img src="images/icons/ArrowDown.png" alt="เปิดเมนู">
+                </a>
+
+                <div class="DropdownMenu ExploreMenu">
+                    <div class="DropdownGroup">
+                        <a href="Category.html" class="DropdownItem DropdownCategory">
+                            <span>หมวดหมู่</span>
+                            <span class="DropdownArrow">›</span>
+                        </a>
+
+                        <div class="CategorySubmenu">
+                            <a href="PC.html" class="DropdownItem">คอมพิวเตอร์และโน้ตบุ๊ก</a>
+                            <a href="Mobile.html" class="DropdownItem">อุปกรณ์พกพา</a>
+                            <a href="Gaming.html" class="DropdownItem">เกมและอุปกรณ์เกม</a>
+                            <a href="Audio.html" class="DropdownItem">เครื่องเสียง</a>
+                            <a href="PCAccessories.html" class="DropdownItem">อุปกรณ์เสริมคอมพิวเตอร์</a>
+                        </div>
+                    </div>
+
+                    <a href="Reviews.html" class="DropdownItem">รีวิวทั้งหมด</a>
+                    <a href="Favorites.html" class="DropdownItem">รายการโปรด</a>
+                    <a href="Compare.html" class="DropdownItem">เปรียบเทียบสินค้า</a>
+                    <a href="History.html" class="DropdownItem">ประวัติการเข้าชม</a>
+                    <a href="Setup.html" class="DropdownItem">My Setup</a>
+                    <a href="Request.html" class="DropdownItem">ส่งคำขอ</a>
+                </div>
+            </div>
+
+            <div class="NavDropdown">
+                <a href="Category.html" class="NavLink">หมวดหมู่<img src="images/icons/ArrowDown.png" alt="Arrow Down"></a>
+
+                <div class="DropdownMenu CategoryMenu">
+                    <a href="PC.html" class="DropdownLink">คอมพิวเตอร์และโน้ตบุ๊ก</a>
+                    <a href="Mobile.html" class="DropdownLink">อุปกรณ์พกพา</a>
+                    <a href="Gaming.html" class="DropdownLink">เกมและอุปกรณ์เกม</a>
+                    <a href="Audio.html" class="DropdownLink">เครื่องเสียง</a>
+                    <a href="Accessories.html" class="DropdownLink">อุปกรณ์เสริมคอมพิวเตอร์</a>
+                </div>
+            </div>
+
+            <a href="About.html" class="NavLink Active">เกี่ยวกับเรา</a>
+        </nav>
+
+        <div class="NavActions">
+            <button class="NavIcon SearchButton" aria-label="ค้นหา">
+                <img src="images/icons/SearchIcon.png" alt="ค้นหา">
+            </button>
+
+            <a href="Settings.html" class="NavIcon" aria-label="ตั้งค่า"><img src="images/icons/SettingIcon.png" alt="ตั้งค่า"></a>
+
+            <button class="NavMenuButton" aria-label="เปิดเมนู">☰</button>
+        </div>
+    </header>
+    
+
+    <main class="About">
+        <!-- About Introduction -->
+        <section class="AboutIntro">
+            <h1>เกี่ยวกับ Findally</h1>
+            <p>
+                Findally คือเว็บไซต์รีวิวและเปรียบเทียบเทคโนโลยี
+                <br>
+                เราช่วยให้คุณค้นพบอุปกรณ์ที่เหมาะกับการใช้งาน ผ่านรีวิว ข้อมูล
+                <br>
+                และการเปรียบเทียบที่เข้าใจง่าย
+            </p>
+
+            <p class="AboutIntroText">
+                ตั้งแต่ PC &amp; Laptop, อุปกรณ์เสริม, Audio, Mobile ไปจนถึง
+                <br>
+                Gaming เรารวมสิ่งที่น่าสนใจไว้ในที่เดียว เพื่อช่วยให้คุณ เลือกได้ง่ายขึ้นและเลือกได้อย่างมั่นใจ
+            </p>
+        </section>
+
+
+        <!-- Categories -->
+        <section class="AboutCategories">
+            <h2>สิ่งที่คุณจะพบเจอจากที่นี่</h2>
+
+            <div class="AboutCategoryGrid">
+                <a href="Categories.html" class="AboutCategoryCard PCCard">
+                    <img src="images/icons/PCIcon.png" alt="PC & Laptop">
+                    <span>PC &amp; Laptop</span>
+                </a>
+
+                <a href="Categories.html" class="AboutCategoryCard MobileCard">
+                    <img src="images/icons/MobileIcon.png" alt="Mobile">
+                    <span>Mobile</span>
+                </a>
+
+                <a href="Categories.html" class="AboutCategoryCard GamingCard">
+                    <img src="images/icons/GamingIcon.png" alt="Gaming">
+                    <span>Gaming</span>
+                </a>
+
+                <a href="Categories.html" class="AboutCategoryCard AudioCard">
+                    <img src="images/icons/AudioIcon.png" alt="Audio">
+                    <span>Audio</span>
+                </a>
+
+                <a href="Categories.html" class="AboutCategoryCard AccessoriesCard">
+                    <img src="images/icons/MouseIcon.png" alt="PC Accessories">
+                    <span>PC Accessories</span>
+                </a>
+            </div>
+        </section>
+
+
+        <!-- Features -->
+        <section class="AboutFeatures">
+            <h2>ทุกสิ่งที่คุณต้องการเพื่อ<span>การตัดสินใจเลือกสิ่งที่ดีกว่า</span></h2>
+
+            <div class="AboutFeatureGrid">
+                <a href="Review.html" class="AboutFeatureCard">
+                    <img src="images/icons/ReviewIcon.png" alt="รีวิว">
+                    <div>
+                        <h3>รีวิว</h3>
+                        <p>
+                            ความคิดเห็นที่น่าเชื่อถือและ
+                            รายละเอียดจากการใช้งานจริงของผู้ใช้
+                            และผู้จัดทำ
+                        </p>
+                    </div>
+                </a>
+
+                <a href="Categories.html" class="AboutFeatureCard">
+                    <img src="images/icons/CategoryIcon.png" alt="หมวดหมู่">
+
+                    <div>
+                        <h3>หมวดหมู่</h3>
+                        <p>
+                            สำรวจสินค้าและเนื้อหาที่จัด
+                            แยกตามหมวดหมู่เพื่อค้นหาสิ่งที่คุณสนใจ
+                        </p>
+                    </div>
+                </a>
+
+                <a href="Compare.html" class="AboutFeatureCard">
+                    <img src="images/icons/CompareIcon.png" alt="เปรียบเทียบ">
+
+                    <div>
+                        <h3>เปรียบเทียบ</h3>
+                        <p>
+                            การเปรียบเทียบแบบ
+                            เจาะลึกพร้อมกับสิ่งที่มีให้
+                            แตกต่างที่สำคัญ
+                        </p>
+                    </div>
+                </a>
+
+                <a href="Setup.html" class="AboutFeatureCard">
+                    <img src="images/icons/BluePC.png" alt="My Setup">
+
+                    <div>
+                        <h3>My Setup</h3>
+                        <p>
+                            สำรวจอุปกรณ์ที่ผู้จัดทำ
+                            ใช้อยู่จริงพร้อมกับข้อมูล
+                            จากประสบการณ์ใช้งานจริง
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="Footer">
+        <div class="FooterMain">
+            <div class="FooterBrand">
+                <a href="Index.html" class="FooterLogo"><span>Find</span>ally</a>
+                <p>Finally found what you’re looking for.</p>
+            </div>
+
+            <nav class="FooterLinks">
+                <a href="Review.html">รีวิว</a>
+                <a href="About.html">เกี่ยวกับเรา</a>
+                <a href="Request.html">ส่งคำขอ</a>
+            </nav>
+
+            <div class="FooterSocials">
+                <a href="#" aria-label="Discord"><img src="images/icons/DiscordIcon.png" alt="Discord"></a>
+                <a href="#" aria-label="Facebook"><img src="images/icons/FacebookIcon.png" alt="Facebook"></a>
+                <a href="#" aria-label="YouTube"><img src="images/icons/YoutubeIcon.png" alt="YouTube"></a>
+            </div>
+        </div>
+
+        <div class="FooterBottom">
+            <p>©2026 ITG11</p>
+            <p>จัดทำเพื่อเหล่าคนรักในการค้นพบสิ่งใหม่ๆ</p>
+        </div>
+    </footer>
+</body>
+</html>

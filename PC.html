@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Findally</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" type="text/css" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" type="text/css" href="PC.css">
+</head>
+<body>
+    <header class="NavBar">
+        <a href="Index.html" class="NavLogo"><span>Find</span>ally</a>
+
+        <nav class="NavMenu">
+            <a href="Index.html" class="NavLink">หน้าแรก</a>
+
+            <div class="NavDropdown">
+                <a href="#" class="NavLink">
+                    สำรวจ
+                    <img src="images/icons/ArrowDown.png" alt="เปิดเมนู">
+                </a>
+
+                <div class="DropdownMenu ExploreMenu">
+                    <div class="DropdownGroup">
+                        <a href="Category.html" class="DropdownItem DropdownCategory">
+                            <span>หมวดหมู่</span>
+                            <span class="DropdownArrow">›</span>
+                        </a>
+
+                        <div class="CategorySubmenu">
+                            <a href="PC.html" class="DropdownItem">คอมพิวเตอร์และโน้ตบุ๊ก</a>
+                            <a href="Mobile.html" class="DropdownItem">อุปกรณ์พกพา</a>
+                            <a href="Gaming.html" class="DropdownItem">เกมและอุปกรณ์เกม</a>
+                            <a href="Audio.html" class="DropdownItem">เครื่องเสียง</a>
+                            <a href="PCAccessories.html" class="DropdownItem">อุปกรณ์เสริมคอมพิวเตอร์</a>
+                        </div>
+                    </div>
+
+                    <a href="Reviews.html" class="DropdownItem">รีวิวทั้งหมด</a>
+                    <a href="Favorites.html" class="DropdownItem">รายการโปรด</a>
+                    <a href="Compare.html" class="DropdownItem">เปรียบเทียบสินค้า</a>
+                    <a href="History.html" class="DropdownItem">ประวัติการเข้าชม</a>
+                    <a href="Setup.html" class="DropdownItem">My Setup</a>
+                    <a href="Request.html" class="DropdownItem">ส่งคำขอ</a>
+                </div>
+            </div>
+
+            <div class="NavDropdown">
+                <a href="Category.html" class="NavLink Active">หมวดหมู่<img src="images/icons/ArrowDown.png" alt="Arrow Down"></a>
+
+                <div class="DropdownMenu CategoryMenu">
+                    <a href="PC.html" class="DropdownLink">คอมพิวเตอร์และโน้ตบุ๊ก</a>
+                    <a href="Mobile.html" class="DropdownLink">อุปกรณ์พกพา</a>
+                    <a href="Gaming.html" class="DropdownLink">เกมและอุปกรณ์เกม</a>
+                    <a href="Audio.html" class="DropdownLink">เครื่องเสียง</a>
+                    <a href="Accessories.html" class="DropdownLink">อุปกรณ์เสริมคอมพิวเตอร์</a>
+                </div>
+            </div>
+
+            <a href="About.html" class="NavLink">เกี่ยวกับเรา</a>
+        </nav>
+
+        <div class="NavActions">
+            <button class="NavIcon SearchButton" aria-label="ค้นหา">
+                <img src="images/icons/SearchIcon.png" alt="ค้นหา">
+            </button>
+
+            <a href="Settings.html" class="NavIcon" aria-label="ตั้งค่า"><img src="images/icons/SettingIcon.png" alt="ตั้งค่า"></a>
+
+            <button class="NavMenuButton" aria-label="เปิดเมนู">☰</button>
+        </div>
+    </header>
+    
+
+    <main class="PC">
+
+        <h1>รีวิวในหมวดหมู่คอมพิวเตอร์และโน้ตบุ๊ก</h1>
+
+        <nav class="PCFilters" aria-label="หมวดหมู่คอมพิวเตอร์">
+            <a href="#" class="PCFilter">โน้ตบุ๊ก</a>
+            <a href="#" class="PCFilter">จอภาพ</a>
+            <a href="#" class="PCFilter">การ์ดจอ</a>
+            <a href="#" class="PCFilter">แรม</a>
+            <a href="#" class="PCFilter">ซีพียู</a>
+            <!-- <a href="Laptop.html" class="PCFilter">โน้ตบุ๊ก</a>
+            <a href="Monitor.html" class="PCFilter">จอภาพ</a>
+            <a href="GPU.html" class="PCFilter">การ์ดจอ</a>
+            <a href="RAM.html" class="PCFilter">แรม</a>
+            <a href="CPU.html" class="PCFilter">ซีพียู</a> -->
+        </nav>
+
+        <section class="PCReviews" aria-label="รีวิวสินค้า">
+
+            <!-- RTX 3050 -->
+            <article class="PCReviewCard">
+
+                <!-- <a href="RTX3050.html" class="PCImageLink"> -->
+                <a href="PCReview.html" class="PCImageLink">
+                    <img
+                        src="images/3050.webp"
+                        alt="GIGABYTE GeForce RTX 3050 GAMING OC 8G">
+                </a>
+
+                <div class="PCReviewContent">
+                    <h2>RTX 3050 GAMING OC 8G</h2>
+
+                    <p>
+                        การ์ดจอสำหรับเล่นเกมที่ให้ประสิทธิภาพดี
+                        ในระดับ 1080p พร้อมหน่วยความจำ GDDR6
+                        ขนาด 8GB รองรับ Ray Tracing และ DLSS
+                        เหมาะสำหรับการเล่นเกมและใช้งานทั่วไป
+                    </p>
+                </div>
+
+            </article>
+
+
+            <!-- Cooler Master GM2711 -->
+            <article class="PCReviewCard">
+
+                <!-- <a href="GM2711.html" class="PCImageLink"> -->
+                <a href="PCReview.html" class="PCImageLink">
+                    <img
+                        src="images/GM2711.webp"
+                        alt="Cooler Master GM2711">
+                </a>
+
+                <div class="PCReviewContent">
+                    <h2>Cooler Master GM2711</h2>
+
+                    <p>
+                        จอเกมมิ่งขนาด 27 นิ้วที่เน้นภาพคมชัด
+                        และการแสดงผลที่ลื่นไหล เหมาะสำหรับ
+                        การเล่นเกมและการใช้งานทั่วไป
+                    </p>
+                </div>
+
+            </article>
+
+
+            <!-- ASUS TUF Gaming F16 -->
+            <article class="PCReviewCard">
+
+                <!-- <a href="F16.html" class="PCImageLink"> -->
+                <a href="PCReview.html" class="PCImageLink">
+                    <img
+                        src="images/F16.webp"
+                        alt="ASUS TUF Gaming F16">
+                </a>
+
+                <div class="PCReviewContent">
+                    <h2>ASUS TUF Gaming F16</h2>
+
+                    <p>
+                        โน้ตบุ๊กเกมมิ่งทรงพลังที่สร้างมาเพื่อ
+                        ประสิทธิภาพที่ลื่นไหล การทำงานหลายอย่าง
+                        พร้อมกันที่รวดเร็ว และรองรับเกมที่ต้องการ
+                        ประสิทธิภาพสูง
+                    </p>
+                </div>
+
+            </article>
+
+
+            <!-- Intel Core i5-12400F -->
+            <article class="PCReviewCard">
+
+                <!-- <a href="I5.html" class="PCImageLink"> -->
+                <a href="PCReview.html" class="PCImageLink">
+                    <img
+                        src="images/I5.webp"
+                        alt="Intel Core i5-12400F">
+                </a>
+
+                <div class="PCReviewContent">
+                    <h2>Intel Core i5-12400F</h2>
+
+                    <p>
+                        โปรเซสเซอร์ระดับกลางที่ให้ประสิทธิภาพดี
+                        สำหรับการเล่นเกมและใช้งานทั่วไป
+                        เหมาะสำหรับการประกอบ PC ที่ต้องการ
+                        ความคุ้มค่า
+                    </p>
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <footer class="Footer">
+        <div class="FooterMain">
+            <div class="FooterBrand">
+                <a href="Index.html" class="FooterLogo"><span>Find</span>ally</a>
+                <p>Finally found what you’re looking for.</p>
+            </div>
+
+            <nav class="FooterLinks">
+                <a href="Review.html">รีวิว</a>
+                <a href="About.html">เกี่ยวกับเรา</a>
+                <a href="Request.html">ส่งคำขอ</a>
+            </nav>
+
+            <div class="FooterSocials">
+                <a href="#" aria-label="Discord"><img src="images/icons/DiscordIcon.png" alt="Discord"></a>
+                <a href="#" aria-label="Facebook"><img src="images/icons/FacebookIcon.png" alt="Facebook"></a>
+                <a href="#" aria-label="YouTube"><img src="images/icons/YoutubeIcon.png" alt="YouTube"></a>
+            </div>
+        </div>
+
+        <div class="FooterBottom">
+            <p>©2026 ITG11</p>
+            <p>จัดทำเพื่อเหล่าคนรักในการค้นพบสิ่งใหม่ๆ</p>
+        </div>
+    </footer>
+</body>
+</html>

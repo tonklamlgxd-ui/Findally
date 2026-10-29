@@ -1,0 +1,780 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Inter", "Noto Sans Thai", sans-serif;
+}
+
+.NavBar {
+    width: 100%;
+    height: 68px;
+    padding: 0 28px;
+
+    display: flex;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    background: #F5F8FF;
+    border-bottom: 1px solid #A8D7FF;
+
+    font-family: "Inter", sans-serif;
+
+    position: relative;
+    z-index: 100;
+}
+
+/* Logo */
+.NavLogo {
+    font-family: "Manrope", sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -1px;
+
+    color: #001B36;
+    text-decoration: none;
+}
+
+.NavLogo span {
+    color: #0089E8;
+}
+
+/* Nav */
+.NavMenu {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+
+    margin-left: 72px;
+}
+
+.NavLink {
+    height: 40px;
+    padding: 0 2px;
+
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #001B36;
+    text-decoration: none;
+
+    font-family: "Inter", "Noto Sans Thai", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: 0.2s ease;
+}
+
+.NavLink:hover {
+    color: #0089E8;
+}
+
+/* Active */
+.NavLink.Active {
+    padding: 0 16px;
+
+    color: #FFFFFF;
+    background: #1F9CF0;
+
+    border-radius: 8px;
+}
+
+/* Dropdown */
+.NavDropdown {
+    position: relative;
+}
+
+.NavDropdown > .NavLink {
+    cursor: pointer;
+}
+
+.NavDropdown img {
+    width: 13px;
+    height: 13px;
+
+    object-fit: contain;
+
+    transition: 0.2s ease;
+}
+
+.NavDropdown:hover > .NavLink img {
+    transform: rotate(180deg);
+}
+
+/* Dropdown */
+.NavDropdown {
+    position: relative;
+}
+
+.NavDropdown > .NavLink {
+    cursor: pointer;
+}
+
+.DropdownMenu {
+    position: absolute;
+    top: 48px;
+    left: 0;
+
+    width: 250px;
+    padding: 10px;
+
+    background: #FFFFFF;
+    border: 1px solid #A8D7FF;
+    border-radius: 14px;
+
+    box-shadow: 0 10px 25px rgba(0, 27, 54, 0.10);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+
+    transition: 0.2s ease;
+
+    z-index: 200;
+}
+
+.NavDropdown:hover > .DropdownMenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Dropdown Item */
+.DropdownItem {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    min-height: 48px;
+    padding: 10px 16px;
+
+    box-sizing: border-box;
+
+    color: #001B36;
+    text-decoration: none;
+
+    font-family: "Inter", "Noto Sans Thai", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+    border-radius: 8px;
+}
+
+.DropdownItem:hover {
+    color: #0089E8;
+    background: #F0F7FF;
+}
+
+/* Dropdown Group */
+.DropdownGroup {
+    position: relative;
+}
+
+/* Category */
+.DropdownCategory {
+    justify-content: space-between;
+
+    color: #0089E8;
+    background: #F0F7FF;
+}
+
+.DropdownArrow {
+    font-size: 25px;
+    line-height: 1;
+}
+
+/* Category Submenu */
+.CategorySubmenu {
+    position: absolute;
+    top: 0;
+    left: calc(100% + 6px);
+
+    width: 250px;
+    padding: 10px;
+
+    background: #FFFFFF;
+    border: 1px solid #A8D7FF;
+    border-radius: 14px;
+
+    box-shadow: 0 10px 25px rgba(0, 27, 54, 0.10);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(8px);
+
+    transition: 0.2s ease;
+
+    z-index: 201;
+}
+
+.DropdownGroup:hover > .CategorySubmenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+/* Category Submenu Item */
+.CategorySubmenu .DropdownItem {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    min-height: 48px;
+    padding: 10px 16px;
+
+    box-sizing: border-box;
+
+    color: #001B36;
+    background: transparent;
+
+    text-decoration: none;
+
+    font-family: "Inter", "Noto Sans Thai", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+    border-radius: 8px;
+}
+
+.CategorySubmenu .DropdownItem:hover {
+    color: #0089E8;
+    background: #F0F7FF;
+}
+
+.DropdownGroup:hover > .CategorySubmenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+/* Category Dropdown */
+.CategoryMenu {
+    width: 250px;
+}
+
+/* Category Dropdown Link */
+.DropdownLink {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    min-height: 48px;
+    padding: 10px 16px;
+
+    box-sizing: border-box;
+
+    color: #001B36;
+    background: transparent;
+
+    text-decoration: none;
+
+    font-family: "Inter", "Noto Sans Thai", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+    border-radius: 8px;
+}
+
+.DropdownLink:hover {
+    color: #0089E8;
+    background: #F0F7FF;
+}
+
+/* Right side */
+.NavActions {
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+/* Search / Setting */
+.NavIcon {
+    width: 30px;
+    height: 30px;
+
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+}
+.NavIcon img {
+    width: 28px;
+    height: 28px;
+
+    object-fit: contain;
+
+    transition: 0.2s ease;
+}
+.NavIcon:hover img {
+    transform: scale(1.08);
+}
+/* Mobile Menu */
+.NavMenuButton {
+    display: none;
+
+    padding: 0;
+
+    border: none;
+    background: transparent;
+
+    color: #001B36;
+
+    font-size: 27px;
+    cursor: pointer;
+}
+
+
+
+.Footer {
+    width: 100%;
+    background: #F3F7FF;
+    color: #001B36;
+
+    font-family: "Inter", "Noto Sans Thai", sans-serif;
+}
+
+
+/* Main Footer */
+.FooterMain {
+    min-height: 120px;
+
+    padding: 22px 30px 20px;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
+
+
+/* Brand */
+.FooterBrand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.FooterLogo {
+    font-family: "Manrope", sans-serif;
+
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1;
+
+    letter-spacing: -2px;
+
+    color: #001B36;
+    text-decoration: none;
+}
+
+.FooterLogo span {
+    color: #0089E8;
+}
+
+.FooterBrand p {
+    margin-top: 12px;
+
+    font-size: 17px;
+    font-weight: 400;
+
+    color: #001B36;
+}
+
+
+/* Links */
+.FooterLinks {
+    display: flex;
+    align-items: center;
+}
+
+.FooterLinks a {
+    padding: 0 18px;
+
+    color: #001B36;
+    text-decoration: none;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    transition: color 0.2s ease;
+}
+
+.FooterLinks a + a {
+    border-left: 1px solid #001B36;
+}
+
+.FooterLinks a:hover {
+    color: #0089E8;
+}
+
+
+/* Social Icons */
+.FooterSocials {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 20px;
+}
+
+.FooterSocials a {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.FooterSocials img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    transition: transform 0.2s ease;
+}
+
+.FooterSocials a:hover img {
+    transform: translateY(-2px);
+}
+
+
+/* Bottom Footer */
+.FooterBottom {
+    min-height: 91px;
+
+    padding: 0 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-top: 2px solid #A8D7FF;
+}
+
+.FooterBottom p {
+    margin: 0;
+
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
+/* Compare Page */
+.ComparePage {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 24px 32px 30px;
+    color: #001B36;
+}
+
+.CompareTitle {
+    margin-bottom: 14px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.CompareSelectButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 205px;
+    min-height: 38px;
+    margin-bottom: 18px;
+    color: #FFFFFF;
+    background: #1F9CF0;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.CompareSelectButton:hover {
+    background: #0089E8;
+}
+
+/* Product Images */
+.CompareProducts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.CompareProduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 0;
+    padding: 0 12px 12px;
+    text-align: center;
+}
+
+.CompareProduct img {
+    display: block;
+    width: 180px;
+    max-width: 100%;
+    height: 150px;
+    margin-bottom: 8px;
+    object-fit: contain;
+}
+
+.CompareProduct h2 {
+    display: none;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+/* Comparison Table */
+.CompareTableWrapper {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid #8CCFFF;
+    border-radius: 12px;
+}
+
+.CompareTable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    table-layout: fixed;
+    background: #F7F9FD;
+    font-size: 15px;
+}
+
+.CompareTable th,
+.CompareTable td {
+    padding: 4px 8px;
+    vertical-align: middle;
+    overflow-wrap: anywhere;
+}
+
+.CompareTable th {
+    width: 25%;
+    color: #001B36;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.CompareTable td {
+    width: 37.5%;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.CompareTable th + td {
+    border-left: 1px solid #C9DFFF;
+}
+
+.CompareTable td + td {
+    border-left: 1px solid #C9DFFF;
+}
+
+/* Responsive */
+@media screen and (max-width: 576px) {
+    .NavBar {
+        height: auto;
+        min-height: 60px;
+        padding: 12px 16px;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .NavLogo {
+        font-size: 26px;
+    }
+
+    .NavMenu {
+        order: 3;
+        width: 100%;
+        margin-left: 0;
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .NavLink {
+        min-height: 36px;
+        height: auto;
+        padding: 7px 9px;
+        gap: 5px;
+        font-size: 13px;
+    }
+
+    .NavLink.Active {
+        padding: 7px 12px;
+    }
+
+    .NavDropdown img {
+        width: 11px;
+        height: 11px;
+    }
+
+    .DropdownMenu {
+        top: 100%;
+        left: 0;
+        width: min(250px, calc(100vw - 32px));
+    }
+
+    .CategorySubmenu {
+        top: 100%;
+        left: 0;
+        width: min(250px, calc(100vw - 32px));
+    }
+
+    .NavActions {
+        gap: 14px;
+    }
+
+    .NavIcon {
+        width: 26px;
+        height: 26px;
+    }
+
+    .NavIcon img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .NavMenuButton {
+        display: none;
+    }
+
+        .FooterMain {
+        min-height: 0;
+        padding: 24px 16px;
+        grid-template-columns: 1fr;
+        gap: 22px;
+        justify-items: start;
+    }
+
+    .FooterLogo {
+        font-size: 34px;
+    }
+
+    .FooterBrand p {
+        margin-top: 8px;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .FooterLinks {
+        flex-wrap: wrap;
+        gap: 8px 0;
+    }
+
+    .FooterLinks a {
+        padding: 0 12px;
+        font-size: 14px;
+    }
+
+    .FooterLinks a:first-child {
+        padding-left: 0;
+    }
+
+    .FooterSocials {
+        justify-content: flex-start;
+        gap: 16px;
+    }
+
+    .FooterSocials a {
+        width: 38px;
+        height: 38px;
+    }
+
+    .FooterBottom {
+        min-height: 0;
+        padding: 14px 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .FooterBottom p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .ComparePage {
+        padding: 16px 12px 24px;
+    }
+
+    .CompareTitle {
+        margin-bottom: 10px;
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .CompareSelectButton {
+        width: 100%;
+        max-width: 180px;
+        min-height: 32px;
+        margin-bottom: 14px;
+        font-size: 13px;
+    }
+
+    .CompareProducts {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        margin-bottom: 6px;
+    }
+
+    .CompareProduct {
+        padding: 0 2px 8px;
+    }
+
+    .CompareProduct img {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 5px;
+    }
+
+    .CompareProduct h2 {
+        display: block;
+        font-size: 10px;
+        line-height: 1.4;
+    }
+
+    .CompareTableWrapper {
+        overflow: visible;
+        border-radius: 9px;
+    }
+
+    .CompareTable {
+        font-size: 9px;
+    }
+
+    .CompareTable th,
+    .CompareTable td {
+        padding: 5px 3px;
+        line-height: 1.4;
+    }
+
+    .CompareTable th {
+        width: 29%;
+        font-size: 9px;
+    }
+
+    .CompareTable td {
+        width: 35.5%;
+        font-size: 8px;
+        overflow-wrap: anywhere;
+    }
+}

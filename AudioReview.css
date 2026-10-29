@@ -1,0 +1,876 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Inter", "Noto Sans Thai", sans-serif;
+}
+
+.NavBar {
+    width: 100%;
+    height: 68px;
+    padding: 0 28px;
+
+    display: flex;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    background: #F5F8FF;
+    border-bottom: 1px solid #A8D7FF;
+
+    font-family: "Inter", sans-serif;
+
+    position: relative;
+    z-index: 100;
+}
+
+/* Logo */
+.NavLogo {
+    font-family: "Manrope", sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -1px;
+
+    color: #001B36;
+    text-decoration: none;
+}
+
+.NavLogo span {
+    color: #0089E8;
+}
+
+/* Nav */
+.NavMenu {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+
+    margin-left: 72px;
+}
+
+.NavLink {
+    height: 40px;
+    padding: 0 2px;
+
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #001B36;
+    text-decoration: none;
+
+    font-family: "Inter", "Noto Sans Thai", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: 0.2s ease;
+}
+
+.NavLink:hover {
+    color: #0089E8;
+}
+
+/* Active */
+.NavLink.Active {
+    padding: 0 16px;
+
+    color: #FFFFFF;
+    background: #1F9CF0;
+
+    border-radius: 8px;
+}
+
+/* Dropdown */
+.NavDropdown {
+    position: relative;
+}
+
+.NavDropdown > .NavLink {
+    cursor: pointer;
+}
+
+.NavDropdown img {
+    width: 13px;
+    height: 13px;
+
+    object-fit: contain;
+
+    transition: 0.2s ease;
+}
+
+.NavDropdown:hover > .NavLink img {
+    transform: rotate(180deg);
+}
+
+/* Dropdown */
+.NavDropdown {
+    position: relative;
+}
+
+.NavDropdown > .NavLink {
+    cursor: pointer;
+}
+
+.DropdownMenu {
+    position: absolute;
+    top: 48px;
+    left: 0;
+
+    width: 250px;
+    padding: 10px;
+
+    background: #FFFFFF;
+    border: 1px solid #A8D7FF;
+    border-radius: 14px;
+
+    box-shadow: 0 10px 25px rgba(0, 27, 54, 0.10);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+
+    transition: 0.2s ease;
+
+    z-index: 200;
+}
+
+.NavDropdown:hover > .DropdownMenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Dropdown Item */
+.DropdownItem {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    min-height: 48px;
+    padding: 10px 16px;
+
+    box-sizing: border-box;
+
+    color: #001B36;
+    text-decoration: none;
+
+    font-family: "Inter", "Noto Sans Thai", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+    border-radius: 8px;
+}
+
+.DropdownItem:hover {
+    color: #0089E8;
+    background: #F0F7FF;
+}
+
+/* Dropdown Group */
+.DropdownGroup {
+    position: relative;
+}
+
+/* Category */
+.DropdownCategory {
+    justify-content: space-between;
+
+    color: #0089E8;
+    background: #F0F7FF;
+}
+
+.DropdownArrow {
+    font-size: 25px;
+    line-height: 1;
+}
+
+/* Category Submenu */
+.CategorySubmenu {
+    position: absolute;
+    top: 0;
+    left: calc(100% + 6px);
+
+    width: 250px;
+    padding: 10px;
+
+    background: #FFFFFF;
+    border: 1px solid #A8D7FF;
+    border-radius: 14px;
+
+    box-shadow: 0 10px 25px rgba(0, 27, 54, 0.10);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(8px);
+
+    transition: 0.2s ease;
+
+    z-index: 201;
+}
+
+.DropdownGroup:hover > .CategorySubmenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+/* Category Submenu Item */
+.CategorySubmenu .DropdownItem {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    min-height: 48px;
+    padding: 10px 16px;
+
+    box-sizing: border-box;
+
+    color: #001B36;
+    background: transparent;
+
+    text-decoration: none;
+
+    font-family: "Inter", "Noto Sans Thai", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+    border-radius: 8px;
+}
+
+.CategorySubmenu .DropdownItem:hover {
+    color: #0089E8;
+    background: #F0F7FF;
+}
+
+.DropdownGroup:hover > .CategorySubmenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+/* Category Dropdown */
+.CategoryMenu {
+    width: 250px;
+}
+
+/* Category Dropdown Link */
+.DropdownLink {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    min-height: 48px;
+    padding: 10px 16px;
+
+    box-sizing: border-box;
+
+    color: #001B36;
+    background: transparent;
+
+    text-decoration: none;
+
+    font-family: "Inter", "Noto Sans Thai", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+    border-radius: 8px;
+}
+
+.DropdownLink:hover {
+    color: #0089E8;
+    background: #F0F7FF;
+}
+
+/* Right side */
+.NavActions {
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+/* Search / Setting */
+.NavIcon {
+    width: 30px;
+    height: 30px;
+
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+}
+.NavIcon img {
+    width: 28px;
+    height: 28px;
+
+    object-fit: contain;
+
+    transition: 0.2s ease;
+}
+.NavIcon:hover img {
+    transform: scale(1.08);
+}
+/* Mobile Menu */
+.NavMenuButton {
+    display: none;
+
+    padding: 0;
+
+    border: none;
+    background: transparent;
+
+    color: #001B36;
+
+    font-size: 27px;
+    cursor: pointer;
+}
+
+
+
+.Footer {
+    width: 100%;
+    background: #F3F7FF;
+    color: #001B36;
+
+    font-family: "Inter", "Noto Sans Thai", sans-serif;
+}
+
+
+/* Main Footer */
+.FooterMain {
+    min-height: 120px;
+
+    padding: 22px 30px 20px;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
+
+
+/* Brand */
+.FooterBrand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.FooterLogo {
+    font-family: "Manrope", sans-serif;
+
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1;
+
+    letter-spacing: -2px;
+
+    color: #001B36;
+    text-decoration: none;
+}
+
+.FooterLogo span {
+    color: #0089E8;
+}
+
+.FooterBrand p {
+    margin-top: 12px;
+
+    font-size: 17px;
+    font-weight: 400;
+
+    color: #001B36;
+}
+
+
+/* Links */
+.FooterLinks {
+    display: flex;
+    align-items: center;
+}
+
+.FooterLinks a {
+    padding: 0 18px;
+
+    color: #001B36;
+    text-decoration: none;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    transition: color 0.2s ease;
+}
+
+.FooterLinks a + a {
+    border-left: 1px solid #001B36;
+}
+
+.FooterLinks a:hover {
+    color: #0089E8;
+}
+
+
+/* Social Icons */
+.FooterSocials {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 20px;
+}
+
+.FooterSocials a {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.FooterSocials img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    transition: transform 0.2s ease;
+}
+
+.FooterSocials a:hover img {
+    transform: translateY(-2px);
+}
+
+
+/* Bottom Footer */
+.FooterBottom {
+    min-height: 91px;
+
+    padding: 0 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-top: 2px solid #A8D7FF;
+}
+
+.FooterBottom p {
+    margin: 0;
+
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
+/* Audio Review Page */
+.AudioReviewPage {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 28px 5% 40px;
+    color: #001B36;
+}
+
+.AudioReviewPageTitle {
+    margin: 0 0 18px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* Product */
+.AudioReviewProduct {
+    display: grid;
+    grid-template-columns: 300px minmax(0, 1fr);
+    align-items: stretch;
+    gap: 24px;
+    padding: 16px;
+    background: #F5F8FF;
+    border: 1px solid #55B5FF;
+    border-radius: 14px;
+}
+
+.AudioReviewProductImage {
+    width: 100%;
+    min-width: 0;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background: #FFFFFF;
+    border: 1px solid #D5E5FF;
+    border-radius: 10px;
+}
+
+.AudioReviewProductImage img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.AudioReviewProductInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
+}
+
+.AudioReviewProductInfo h2 {
+    margin: 0 0 8px;
+    font-size: 24px;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+}
+
+.AudioReviewDescription {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.AudioReviewTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.AudioReviewTag {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.AudioTagGreen {
+    background: #5DFF8A;
+    color: #001B36;
+}
+
+.AudioTagPurple {
+    background: #DCC6FF;
+    color: #001B36;
+}
+
+.AudioReviewButtons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: auto;
+    padding-top: 20px;
+}
+
+.AudioReviewButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 110px;
+    min-height: 40px;
+    padding: 8px 18px;
+    background: #1F9CF0;
+    color: #FFFFFF;
+    border: 1px solid #1F9CF0;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.AudioReviewButton:hover {
+    background: #0089E8;
+}
+
+/* Specifications */
+.AudioReviewSpecs {
+    margin-top: 28px;
+    padding: 20px;
+    background: #F5F8FF;
+    border: 1px solid #55B5FF;
+    border-radius: 14px;
+}
+
+.AudioReviewSpecs > h2 {
+    margin: 0 0 16px;
+    font-size: 24px;
+}
+
+.AudioReviewSpecGroup {
+    margin-bottom: 12px;
+}
+
+.AudioReviewSpecGroup h3,
+.AudioReviewVerdict h3,
+.AudioReviewScore h3 {
+    margin: 0 0 4px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.AudioReviewSpecGroup ul {
+    padding-left: 22px;
+}
+
+.AudioReviewSpecGroup li {
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.AudioReviewVerdict {
+    margin-top: 16px;
+}
+
+.AudioReviewVerdict p {
+    font-size: 14px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.AudioReviewScore {
+    margin-top: 12px;
+}
+
+.AudioReviewScore p {
+    font-size: 16px;
+}
+
+/* Responsive */
+@media screen and (max-width: 576px) {
+    .NavBar {
+        height: auto;
+        min-height: 60px;
+        padding: 12px 16px;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .NavLogo {
+        font-size: 26px;
+    }
+
+    .NavMenu {
+        order: 3;
+        width: 100%;
+        margin-left: 0;
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .NavLink {
+        min-height: 36px;
+        height: auto;
+        padding: 7px 9px;
+        gap: 5px;
+        font-size: 13px;
+    }
+
+    .NavLink.Active {
+        padding: 7px 12px;
+    }
+
+    .NavDropdown img {
+        width: 11px;
+        height: 11px;
+    }
+
+    .DropdownMenu {
+        top: 100%;
+        left: 0;
+        width: min(250px, calc(100vw - 32px));
+    }
+
+    .CategorySubmenu {
+        top: 100%;
+        left: 0;
+        width: min(250px, calc(100vw - 32px));
+    }
+
+    .NavActions {
+        gap: 14px;
+    }
+
+    .NavIcon {
+        width: 26px;
+        height: 26px;
+    }
+
+    .NavIcon img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .NavMenuButton {
+        display: none;
+    }
+
+        .FooterMain {
+        min-height: 0;
+        padding: 24px 16px;
+        grid-template-columns: 1fr;
+        gap: 22px;
+        justify-items: start;
+    }
+
+    .FooterLogo {
+        font-size: 34px;
+    }
+
+    .FooterBrand p {
+        margin-top: 8px;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .FooterLinks {
+        flex-wrap: wrap;
+        gap: 8px 0;
+    }
+
+    .FooterLinks a {
+        padding: 0 12px;
+        font-size: 14px;
+    }
+
+    .FooterLinks a:first-child {
+        padding-left: 0;
+    }
+
+    .FooterSocials {
+        justify-content: flex-start;
+        gap: 16px;
+    }
+
+    .FooterSocials a {
+        width: 38px;
+        height: 38px;
+    }
+
+    .FooterBottom {
+        min-height: 0;
+        padding: 14px 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .FooterBottom p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .AudioReviewPage {
+        padding: 16px 12px 24px;
+    }
+
+    .AudioReviewPageTitle {
+        margin-bottom: 12px;
+        font-size: 20px;
+    }
+
+    .AudioReviewProduct {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 12px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .AudioReviewProductImage {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+        aspect-ratio: 1 / 1;
+    }
+
+    .AudioReviewProductInfo h2 {
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+
+    .AudioReviewDescription {
+        font-size: 12px;
+        line-height: 1.55;
+    }
+
+    .AudioReviewTags {
+        gap: 6px;
+        margin-top: 8px;
+    }
+
+    .AudioReviewTag {
+        padding: 3px 9px;
+        font-size: 11px;
+    }
+
+    .AudioReviewButtons {
+        width: 100%;
+        gap: 8px;
+        padding-top: 12px;
+    }
+
+    .AudioReviewButton {
+        flex: 1;
+        min-width: 0;
+        min-height: 36px;
+        padding: 7px 10px;
+        font-size: 12px;
+    }
+
+    .AudioReviewSpecs {
+        margin-top: 18px;
+        padding: 12px;
+        border-radius: 10px;
+    }
+
+    .AudioReviewSpecs > h2 {
+        margin-bottom: 12px;
+        font-size: 18px;
+    }
+
+    .AudioReviewSpecGroup {
+        margin-bottom: 10px;
+    }
+
+    .AudioReviewSpecGroup h3,
+    .AudioReviewVerdict h3,
+    .AudioReviewScore h3 {
+        font-size: 13px;
+    }
+
+    .AudioReviewSpecGroup ul {
+        padding-left: 18px;
+    }
+
+    .AudioReviewSpecGroup li {
+        font-size: 12px;
+        line-height: 1.45;
+    }
+
+    .AudioReviewVerdict {
+        margin-top: 12px;
+    }
+
+    .AudioReviewVerdict p {
+        font-size: 12px;
+        line-height: 1.55;
+    }
+
+    .AudioReviewScore {
+        margin-top: 10px;
+    }
+
+    .AudioReviewScore p {
+        font-size: 14px;
+    }
+}
